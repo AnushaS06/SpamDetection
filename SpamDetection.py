@@ -48,4 +48,9 @@ model = predict(MultinomialNB)
 visualize('spam')
 visualize('ham')
 
+yPred = model.predict(Xtest)
+array = confusion_matrix(yPred,Ytest)
+df_cm = pd.DataFrame(array)
+plt.figure(figsize = (2,2))
+sns.heatmap(df_cm, annot=True)
 
