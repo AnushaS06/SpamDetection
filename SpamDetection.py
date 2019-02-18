@@ -2,6 +2,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 from wordcloud import WordCloud
 import pandas as pd
